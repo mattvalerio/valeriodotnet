@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="BottomToTop" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="1" Category="NodeTypeA" Label="Node #1" />
+    <Node Id="10" Category="NodeTypeB" Label="Node #10" />
+    <Node Id="2" Category="NodeTypeC" Label="Node #2" />
+    <Node Id="3" Category="NodeTypeA" Label="Node #3" />
+    <Node Id="4" Category="NodeTypeB" Label="Node #4" />
+    <Node Id="5" Category="NodeTypeC" Label="Node #5" />
+    <Node Id="6" Category="NodeTypeA" Label="Node #6" />
+    <Node Id="7" Category="NodeTypeB" Label="Node #7" />
+    <Node Id="8" Category="NodeTypeC" Label="Node #8" />
+    <Node Id="9" Category="NodeTypeA" Label="Node #9" />
+  </Nodes>
+  <Links>
+    <Link Source="1" Target="2" Category="Uses" Label="uses" />
+    <Link Source="1" Target="8" Category="IsA" Label="is_a" />
+    <Link Source="2" Target="3" Category="Uses" Label="uses" />
+    <Link Source="2" Target="4" Category="Uses" Label="uses" />
+    <Link Source="2" Target="7" Category="Uses" Label="uses" />
+    <Link Source="3" Target="8" Category="Uses" Label="uses" />
+    <Link Source="4" Target="5" Category="Uses" Label="uses" />
+    <Link Source="4" Target="6" Category="IsA" Label="is_a" />
+    <Link Source="4" Target="7" Category="Uses" Label="uses" />
+    <Link Source="7" Target="10" Category="Uses" Label="uses" />
+    <Link Source="7" Target="8" Category="IsA" Label="is_a" />
+    <Link Source="7" Target="9" Category="Uses" Label="uses" />
+  </Links>
+  <Categories>
+    <Category Id="IsA" Background="#FF008000" Stroke="#FF008000" StrokeDashArray="10 10" />
+    <Category Id="NodeTypeA" Background="#FF0000FF" />
+    <Category Id="NodeTypeB" Background="#FFFFFF00" />
+    <Category Id="NodeTypeC" Background="#FFFFA500" />
+    <Category Id="Uses" Background="#FFFF0000" Stroke="#FFFF0000" StrokeThickness="10" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="Background" Description="The background color" DataType="System.Windows.Media.Brush" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Progression.Layout.GraphDirection" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="Stroke" DataType="System.Windows.Media.Brush" />
+    <Property Id="StrokeDashArray" DataType="System.Windows.Media.DoubleCollection" />
+    <Property Id="StrokeThickness" DataType="System.Double" />
+  </Properties>
+</DirectedGraph>
